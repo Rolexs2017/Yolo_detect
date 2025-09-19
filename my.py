@@ -92,7 +92,7 @@ class AI_Detection_System:
         """Инициализация Modbus"""
         try:
             self.modbus_manager = ModbusManager()
-            self.modbus_manager.host = "192.168.3.38"
+            self.modbus_manager.host = "127.0.0.1"
             self.modbus_manager.port = 502
             self.modbus_manager.connect()
             self.modbus_manager.start()
@@ -509,3 +509,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
